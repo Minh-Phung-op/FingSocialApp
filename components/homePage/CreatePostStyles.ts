@@ -3,9 +3,9 @@ const {width, height} = Dimensions.get('window')
 const styles = StyleSheet.create({
     container: {
         width: '100%',
-        height: height*0.07,
+        height: height*0.072,
         backgroundColor: 'white',
-        paddingTop: 3,
+        paddingTop: 5,
         flexDirection: 'row'
     },
     userImage: {

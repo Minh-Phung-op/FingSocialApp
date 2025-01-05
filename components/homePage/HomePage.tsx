@@ -5,7 +5,7 @@ import CreatePost from './CreatePost'
 import Post from './Post'
 // import BottomTap from '../../BottomTap'
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../../App';
+import { RootStackParamList } from '../../type'
 
 type HomePageNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
@@ -16,8 +16,10 @@ type HomePageProps = {
 const HomePage: React.FC<HomePageProps> = ({ navigation }) => {
   return (
     <SafeAreaView style={{ paddingHorizontal: 5 }}>
-      <ScrollView contentInsetAdjustmentBehavior="automatic" style={{ height: '100%', 
-      //       backgroundColor: '#C0C0C0'
+      <ScrollView contentInsetAdjustmentBehavior="automatic" 
+          showsVerticalScrollIndicator = {false} 
+          style={{ height: '100%', 
+            backgroundColor: '#C0C0C0'
       }}>
         <CreatePost/>
         <Stories/>
