@@ -27,6 +27,10 @@ const HomePage: React.FC<HomePageProps> = ({ navigation }) => {
           title="Friends"
           onPress={() => navigation.navigate('Friends')} // Điều hướng đến màn hình "Details"
         />
+        <Button
+          title="Notifications"
+          onPress={() => navigation.navigate('NotificationList')} // Điều hướng đến màn hình "Details"
+        />
         <Post/>
       </ScrollView>
     </SafeAreaView>

@@ -10,6 +10,7 @@ import FriendHub from './components/friends/FriendHub';
 import MyFriends from './components/friends/MyFriends';
 import SentRequest from './components/friends/SentRequest';
 import AllFriendRequests from './components/friends/AllFriendRequests';
+import NotificationList from './components/notifications/NotificationList';
 import { RootStackParamList } from './type';
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -25,6 +26,7 @@ function App(): React.JSX.Element {
         <Stack.Screen name="MyFriends" component={MyFriends} />
         <Stack.Screen name="SentRequest" component={SentRequest} />
         <Stack.Screen name="AllFriendRequests" component={AllFriendRequests} />
+        <Stack.Screen name="NotificationList" component={NotificationList} />
       </Stack.Navigator>
     </NavigationContainer>
   );

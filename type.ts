@@ -5,4 +5,5 @@ export type RootStackParamList = {
   MyFriends: undefined;
   SentRequest: undefined;
   AllFriendRequests: undefined;
+  NotificationList: undefined;
 };
